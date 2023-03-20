@@ -6,6 +6,12 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
+import logo from '../public/logo-rn.svg';
+import profilePic from '../public/profile_pic.jpg';
+import dog1 from '../public/dog_snow.jpg';
+import dog2 from '../public/dog_field.jpg';
+import forest from '../public/forest.jpg';
+import transactor from '../public/transactor.jpg';
 
 export default function Home() {
 	const [tagVis, setTagVis] = useState({
@@ -64,7 +70,7 @@ export default function Home() {
 	return (
 		<div className={styles.mainCont}>
 			<div className={styles.topLeftFixed}>
-				<Image className={styles.logo} src='/logo-rn.svg' width='120' height='120' alt='' />
+				<Image className={styles.logo} src={logo} width='120' height='120' alt='' />
 				<div className={styles.socials}>
 					<a
 						className={styles.icon}
@@ -101,7 +107,7 @@ export default function Home() {
 					</div>
 					<Image
 						className={tagVis.img ? styles.profilePic : styles.hidden}
-						src='/profile_pic.jpg'
+						src={profilePic}
 						width='300'
 						alt=''
 					/>
@@ -138,9 +144,9 @@ export default function Home() {
 								</p>
 							</div>
 							<div className={styles.col}>
-								<Image className={styles.picture} src='/dog_snow.jpg' alt='' />
-								<Image className={styles.picture} src='/dog_field.jpg' alt='' />
-								<Image className={styles.picture} src='/forest.jpg' alt='' />
+								<Image className={styles.picture} src={dog1} alt='' />
+								<Image className={styles.picture} src={dog2} alt='' />
+								<Image className={styles.picture} src={forest} alt='' />
 							</div>
 						</div>
 					</div>
@@ -155,7 +161,7 @@ export default function Home() {
 						<div className={styles.worked}>
 							<div className={styles.row}>
 								<a href='https://transactorsystems.com/'>
-									<Image className={styles.pictureSmall} src='/transactor.jpg' alt='' />
+									<Image className={styles.pictureSmall} src={transactor} alt='' />
 								</a>
 								<h4 className={styles.subtitle}>Transactor Systems LTD</h4>
 							</div>
