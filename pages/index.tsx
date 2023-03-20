@@ -163,12 +163,14 @@ export default function Home() {
 								<a href='https://transactorsystems.com/'>
 									<Image className={styles.pictureSmall} src={transactor} alt='' />
 								</a>
-								<h4 className={styles.subtitle}>Transactor Systems LTD</h4>
+								<div className={styles.companyCol}>
+									<h4 className={styles.subtitle}>Transactor Systems LTD</h4>
+									<p className={styles.highlighted}>
+										Transactor is a company based in England that provides dental lab software to
+										both a UK and US customer base.
+									</p>
+								</div>
 							</div>
-							<p className={styles.body}>
-								Transactor is a company based in England that provides dental lab software to both a UK
-								and US customer base.
-							</p>
 							<p className={styles.body}>
 								My work with Transactor has been to develop a SaaS application structure that ultimately
 								aims to revolutionize both dental and dental lab software. Notable functionality that
