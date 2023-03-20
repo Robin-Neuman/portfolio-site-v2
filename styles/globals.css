@@ -1,0 +1,42 @@
+:root {
+  --background-purp: #443EB9;
+  --cream-white: #E2E0A7;
+  --text-purp: #171745;
+  --wine-red: #30101B;
+  --pink: #E7B8D7;
+  --cyan: #38A2A7;
+
+  --background-blue: #022136;
+  --text-turq-highlight: #65f2df;
+  --text-turq-normal: #88e3ff;
+  --text-turq-semi: #58c5e7;
+  --text-turq-dark: #14C3AB;
+  --blue-1: #023653;
+  --blue-2: #025785;
+  --blue-3: #0279B9;
+  --white: #FFFFFF;
+  --black: #000000;
+
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('/RobotoMono-VariableFont_wght.ttf') format('truetype');
+  font-style: oblique 0deg 20deg;
+  font-stretch: 75% 125%;
+  font-weight: 100 700;
+}
+
+* {
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  background-color: var(--background-blue);
+}
+
+p::selection, h1::selection, h2::selection, 
+h3::selection, h4::selection, li::selection {
+  background: var(--text-turq-semi);
+  color: var(--white);
+}
